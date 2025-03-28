@@ -1,0 +1,132 @@
+[
+    {
+        "question": "What is the output of the following code snippet: `console.log(typeof null)`?",
+        "options": {
+            "a": "\"null\"",
+            "b": "\"object\"",
+            "c": "null",
+            "d": "undefined"
+        },
+        "correctAnswer": {
+            "key": "b",
+            "value": "\"object\""
+        }
+    },
+    {
+        "question": "What will be the output of the following code:\n```javascript\nlet arr = [1, 2, 3];\narr[10] = 5;\nconsole.log(arr.length);\n```",
+        "options": {
+            "a": "3",
+            "b": "4",
+            "c": "10",
+            "d": "11"
+        },
+        "correctAnswer": {
+            "key": "d",
+            "value": "11"
+        }
+    },
+    {
+        "question": "What is the output of the following code?\n```javascript\nfunction foo() {\n  return (() => {\n    return this;\n  }).bind(this)();\n}\nlet obj = {foo};\nconsole.log(obj.foo());\n```",
+        "options": {
+            "a": "undefined",
+            "b": "window",
+            "c": "{foo: f}",
+            "d": "This code will throw an error"
+        },
+        "correctAnswer": {
+            "key": "c",
+            "value": "{foo: f}"
+        }
+    },
+    {
+        "question": "What is the output of the following code snippet?\n```javascript\nlet x = 1;\nlet y = 2;\nconsole.log(eval('x + y'));\n```",
+        "options": {
+            "a": "\"x + y\"",
+            "b": "NaN",
+            "c": "3",
+            "d": "undefined"
+        },
+        "correctAnswer": {
+            "key": "c",
+            "value": "3"
+        }
+    },
+    {
+        "question": "What does the following code print?\n```javascript\nconsole.log(1 < 2 < 3);\nconsole.log(3 > 2 > 1);\n```",
+        "options": {
+            "a": "true, true",
+            "b": "true, false",
+            "c": "false, true",
+            "d": "false, false"
+        },
+        "correctAnswer": {
+            "key": "b",
+            "value": "true, false"
+        }
+    },
+    {
+        "question": "What is the output of the following?\n```javascript\nconsole.log(typeof(function(){}));\n```",
+        "options": {
+            "a": "\"function\"",
+            "b": "\"object\"",
+            "c": "\"Function\"",
+            "d": "undefined"
+        },
+        "correctAnswer": {
+            "key": "a",
+            "value": "\"function\""
+        }
+    },
+    {
+        "question": "What is the output of the following code snippet?\n```javascript\nconsole.log(0.1 + 0.2 === 0.3);\n```",
+        "options": {
+            "a": "true",
+            "b": "false",
+            "c": "\"true\"",
+            "d": "\"false\""
+        },
+        "correctAnswer": {
+            "key": "b",
+            "value": "false"
+        }
+    },
+    {
+        "question": "What will the following code output?\n```javascript\nfunction getName() {\n  console.log('Outer');\n}\n\n(function() {\n  if (typeof getName !== 'undefined') {\n    getName = function() {\n      console.log('Inner');\n    };\n  }\n  getName();\n})();\n\ngetName();\n```",
+        "options": {
+            "a": "Outer, Outer",
+            "b": "Inner, Outer",
+            "c": "Outer, Inner",
+            "d": "Inner, Inner"
+        },
+        "correctAnswer": {
+            "key": "b",
+            "value": "Inner, Outer"
+        }
+    },
+    {
+        "question": "What is the output of this code?\n```javascript\nlet a = {};\nlet b = {key: 'b'};\nlet c = {key: 'c'};\n\na[b] = 123;\na[c] = 456;\n\nconsole.log(a[b]);\n```",
+        "options": {
+            "a": "123",
+            "b": "456",
+            "c": "undefined",
+            "d": "NaN"
+        },
+        "correctAnswer": {
+            "key": "b",
+            "value": "456"
+        }
+    },
+    {
+        "question": "What will the following code output?\n```javascript\nconsole.log(String.prototype.toString.call(null));\n```",
+        "options": {
+            "a": "null",
+            "b": "undefined",
+            "c": "\"null\"",
+            "d": "Error"
+        },
+        "correctAnswer": {
+            "key": "c",
+            "value": "\"null\""
+        }
+    }
+]
